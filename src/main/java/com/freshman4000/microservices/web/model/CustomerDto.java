@@ -15,12 +15,9 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Beer {
-
+public class CustomerDto {
     @Id
     @Type(type="org.hibernate.type.UUIDCharType")
     private UUID id;
-    private String beerName;
-    private String beerStyle;
-    private Long upc;
+    private String name;
 }
